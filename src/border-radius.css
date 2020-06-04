@@ -1,3 +1,4 @@
 .egg__shell:before {
-  border-radius: 0;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
 }
+
