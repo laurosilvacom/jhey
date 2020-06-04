@@ -1,0 +1,768 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:root {
+  --size: 50;
+  --unit: calc((var(--size) / 769) * 1vmin);
+  --specs: #262626;
+  --shell-outline: #666;
+  --bg: #ffd500;
+  --shell: #fff;
+}
+body {
+  background-color: var(--bg);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+@-webkit-keyframes shadow-party {
+  0% {
+    background: #f00;
+  }
+  1% {
+    background: #ff0f00;
+  }
+  2% {
+    background: #ff1f00;
+  }
+  3% {
+    background: #ff2e00;
+  }
+  4% {
+    background: #ff3d00;
+  }
+  5% {
+    background: #ff4d00;
+  }
+  6% {
+    background: #ff5c00;
+  }
+  7% {
+    background: #ff6b00;
+  }
+  8% {
+    background: #ff7a00;
+  }
+  9% {
+    background: #ff8a00;
+  }
+  10% {
+    background: #f90;
+  }
+  11% {
+    background: #ffa800;
+  }
+  12% {
+    background: #ffb800;
+  }
+  13% {
+    background: #ffc700;
+  }
+  14% {
+    background: #ffd600;
+  }
+  15% {
+    background: #ffe500;
+  }
+  16% {
+    background: #fff500;
+  }
+  17% {
+    background: #faff00;
+  }
+  18% {
+    background: #ebff00;
+  }
+  19% {
+    background: #dbff00;
+  }
+  20% {
+    background: #cf0;
+  }
+  21% {
+    background: #bdff00;
+  }
+  22% {
+    background: #adff00;
+  }
+  23% {
+    background: #9eff00;
+  }
+  24% {
+    background: #8fff00;
+  }
+  25% {
+    background: #80ff00;
+  }
+  26% {
+    background: #70ff00;
+  }
+  27% {
+    background: #61ff00;
+  }
+  28% {
+    background: #52ff00;
+  }
+  29% {
+    background: #42ff00;
+  }
+  30% {
+    background: #3f0;
+  }
+  31% {
+    background: #24ff00;
+  }
+  32% {
+    background: #14ff00;
+  }
+  33% {
+    background: #05ff00;
+  }
+  34% {
+    background: #00ff0a;
+  }
+  35% {
+    background: #00ff19;
+  }
+  36% {
+    background: #00ff29;
+  }
+  37% {
+    background: #00ff38;
+  }
+  38% {
+    background: #00ff47;
+  }
+  39% {
+    background: #00ff57;
+  }
+  40% {
+    background: #0f6;
+  }
+  41% {
+    background: #00ff75;
+  }
+  42% {
+    background: #00ff85;
+  }
+  43% {
+    background: #00ff94;
+  }
+  44% {
+    background: #00ffa3;
+  }
+  45% {
+    background: #00ffb3;
+  }
+  46% {
+    background: #00ffc2;
+  }
+  47% {
+    background: #00ffd1;
+  }
+  48% {
+    background: #00ffe0;
+  }
+  49% {
+    background: #00fff0;
+  }
+  50% {
+    background: #0ff;
+  }
+  51% {
+    background: #00f0ff;
+  }
+  52% {
+    background: #00e0ff;
+  }
+  53% {
+    background: #00d1ff;
+  }
+  54% {
+    background: #00c2ff;
+  }
+  55% {
+    background: #00b2ff;
+  }
+  56% {
+    background: #00a3ff;
+  }
+  57% {
+    background: #0094ff;
+  }
+  58% {
+    background: #0085ff;
+  }
+  59% {
+    background: #0075ff;
+  }
+  60% {
+    background: #06f;
+  }
+  61% {
+    background: #0057ff;
+  }
+  62% {
+    background: #0047ff;
+  }
+  63% {
+    background: #0038ff;
+  }
+  64% {
+    background: #0029ff;
+  }
+  65% {
+    background: #0019ff;
+  }
+  66% {
+    background: #000aff;
+  }
+  67% {
+    background: #0500ff;
+  }
+  68% {
+    background: #1400ff;
+  }
+  69% {
+    background: #2400ff;
+  }
+  70% {
+    background: #30f;
+  }
+  71% {
+    background: #4200ff;
+  }
+  72% {
+    background: #5200ff;
+  }
+  73% {
+    background: #6100ff;
+  }
+  74% {
+    background: #7000ff;
+  }
+  75% {
+    background: #7f00ff;
+  }
+  76% {
+    background: #8f00ff;
+  }
+  77% {
+    background: #9e00ff;
+  }
+  78% {
+    background: #ad00ff;
+  }
+  79% {
+    background: #bd00ff;
+  }
+  80% {
+    background: #c0f;
+  }
+  81% {
+    background: #db00ff;
+  }
+  82% {
+    background: #eb00ff;
+  }
+  83% {
+    background: #fa00ff;
+  }
+  84% {
+    background: #ff00f5;
+  }
+  85% {
+    background: #ff00e6;
+  }
+  86% {
+    background: #ff00d6;
+  }
+  87% {
+    background: #ff00c7;
+  }
+  88% {
+    background: #ff00b8;
+  }
+  89% {
+    background: #ff00a8;
+  }
+  90% {
+    background: #f09;
+  }
+  91% {
+    background: #ff008a;
+  }
+  92% {
+    background: #ff007a;
+  }
+  93% {
+    background: #ff006b;
+  }
+  94% {
+    background: #ff005c;
+  }
+  95% {
+    background: #ff004c;
+  }
+  96% {
+    background: #ff003d;
+  }
+  97% {
+    background: #ff002e;
+  }
+  98% {
+    background: #ff001f;
+  }
+  99% {
+    background: #ff000f;
+  }
+  100% {
+    background: #f00;
+  }
+}
+@keyframes shadow-party {
+  0% {
+    background: #f00;
+  }
+  1% {
+    background: #ff0f00;
+  }
+  2% {
+    background: #ff1f00;
+  }
+  3% {
+    background: #ff2e00;
+  }
+  4% {
+    background: #ff3d00;
+  }
+  5% {
+    background: #ff4d00;
+  }
+  6% {
+    background: #ff5c00;
+  }
+  7% {
+    background: #ff6b00;
+  }
+  8% {
+    background: #ff7a00;
+  }
+  9% {
+    background: #ff8a00;
+  }
+  10% {
+    background: #f90;
+  }
+  11% {
+    background: #ffa800;
+  }
+  12% {
+    background: #ffb800;
+  }
+  13% {
+    background: #ffc700;
+  }
+  14% {
+    background: #ffd600;
+  }
+  15% {
+    background: #ffe500;
+  }
+  16% {
+    background: #fff500;
+  }
+  17% {
+    background: #faff00;
+  }
+  18% {
+    background: #ebff00;
+  }
+  19% {
+    background: #dbff00;
+  }
+  20% {
+    background: #cf0;
+  }
+  21% {
+    background: #bdff00;
+  }
+  22% {
+    background: #adff00;
+  }
+  23% {
+    background: #9eff00;
+  }
+  24% {
+    background: #8fff00;
+  }
+  25% {
+    background: #80ff00;
+  }
+  26% {
+    background: #70ff00;
+  }
+  27% {
+    background: #61ff00;
+  }
+  28% {
+    background: #52ff00;
+  }
+  29% {
+    background: #42ff00;
+  }
+  30% {
+    background: #3f0;
+  }
+  31% {
+    background: #24ff00;
+  }
+  32% {
+    background: #14ff00;
+  }
+  33% {
+    background: #05ff00;
+  }
+  34% {
+    background: #00ff0a;
+  }
+  35% {
+    background: #00ff19;
+  }
+  36% {
+    background: #00ff29;
+  }
+  37% {
+    background: #00ff38;
+  }
+  38% {
+    background: #00ff47;
+  }
+  39% {
+    background: #00ff57;
+  }
+  40% {
+    background: #0f6;
+  }
+  41% {
+    background: #00ff75;
+  }
+  42% {
+    background: #00ff85;
+  }
+  43% {
+    background: #00ff94;
+  }
+  44% {
+    background: #00ffa3;
+  }
+  45% {
+    background: #00ffb3;
+  }
+  46% {
+    background: #00ffc2;
+  }
+  47% {
+    background: #00ffd1;
+  }
+  48% {
+    background: #00ffe0;
+  }
+  49% {
+    background: #00fff0;
+  }
+  50% {
+    background: #0ff;
+  }
+  51% {
+    background: #00f0ff;
+  }
+  52% {
+    background: #00e0ff;
+  }
+  53% {
+    background: #00d1ff;
+  }
+  54% {
+    background: #00c2ff;
+  }
+  55% {
+    background: #00b2ff;
+  }
+  56% {
+    background: #00a3ff;
+  }
+  57% {
+    background: #0094ff;
+  }
+  58% {
+    background: #0085ff;
+  }
+  59% {
+    background: #0075ff;
+  }
+  60% {
+    background: #06f;
+  }
+  61% {
+    background: #0057ff;
+  }
+  62% {
+    background: #0047ff;
+  }
+  63% {
+    background: #0038ff;
+  }
+  64% {
+    background: #0029ff;
+  }
+  65% {
+    background: #0019ff;
+  }
+  66% {
+    background: #000aff;
+  }
+  67% {
+    background: #0500ff;
+  }
+  68% {
+    background: #1400ff;
+  }
+  69% {
+    background: #2400ff;
+  }
+  70% {
+    background: #30f;
+  }
+  71% {
+    background: #4200ff;
+  }
+  72% {
+    background: #5200ff;
+  }
+  73% {
+    background: #6100ff;
+  }
+  74% {
+    background: #7000ff;
+  }
+  75% {
+    background: #7f00ff;
+  }
+  76% {
+    background: #8f00ff;
+  }
+  77% {
+    background: #9e00ff;
+  }
+  78% {
+    background: #ad00ff;
+  }
+  79% {
+    background: #bd00ff;
+  }
+  80% {
+    background: #c0f;
+  }
+  81% {
+    background: #db00ff;
+  }
+  82% {
+    background: #eb00ff;
+  }
+  83% {
+    background: #fa00ff;
+  }
+  84% {
+    background: #ff00f5;
+  }
+  85% {
+    background: #ff00e6;
+  }
+  86% {
+    background: #ff00d6;
+  }
+  87% {
+    background: #ff00c7;
+  }
+  88% {
+    background: #ff00b8;
+  }
+  89% {
+    background: #ff00a8;
+  }
+  90% {
+    background: #f09;
+  }
+  91% {
+    background: #ff008a;
+  }
+  92% {
+    background: #ff007a;
+  }
+  93% {
+    background: #ff006b;
+  }
+  94% {
+    background: #ff005c;
+  }
+  95% {
+    background: #ff004c;
+  }
+  96% {
+    background: #ff003d;
+  }
+  97% {
+    background: #ff002e;
+  }
+  98% {
+    background: #ff001f;
+  }
+  99% {
+    background: #ff000f;
+  }
+  100% {
+    background: #f00;
+  }
+}
+.egg {
+  height: calc(769 * var(--unit));
+  width: calc(742 * var(--unit));
+  z-index: 2;
+  position: relative;
+}
+.egg * {
+  position: absolute;
+}
+.egg__shell {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 95%;
+  width: 74%;
+}
+.egg__shell:after,
+.egg__shell:before {
+  content: "";
+  border: calc(22 * var(--unit)) solid var(--shell-outline);
+  position: absolute;
+  background: var(--shell);
+}
+.egg__shell:before {
+  top: 0;
+  left: 50%;
+  height: 65%;
+  width: 92%;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  -webkit-clip-path: inset(0 0 10% 0);
+  clip-path: inset(0 0 10% 0);
+}
+.egg__shell:after {
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  border-radius: 0 0 50% 50%/0 0 78% 78%;
+  -webkit-clip-path: inset(15% 0 0 0);
+  clip-path: inset(15% 0 0 0);
+}
+.egg__specs {
+  height: 31%;
+  width: 95%;
+  top: 31%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.egg__spec {
+  top: 0;
+  width: 46%;
+  height: 95%;
+  -webkit-transform: rotate(calc(var(--rotate) * 12deg))
+    rotateY(calc(var(--flip) * 180deg));
+  transform: rotate(calc(var(--rotate) * 12deg))
+    rotateY(calc(var(--flip) * 180deg));
+  border: calc(44 * var(--unit)) solid var(--specs);
+  border-radius: 25% 60% 32% 38%/34% 37% 45% 30%;
+}
+.egg__spec:after {
+  content: "";
+  position: absolute;
+  height: calc(100% + 88 * var(--unit));
+  width: calc(100% + 88 * var(--unit));
+  top: calc(-44 * var(--unit));
+  left: calc(-44 * var(--unit));
+  border: calc(44 * var(--unit)) solid var(--specs);
+  border-radius: 25% 60% 32% 38%/34% 37% 45% 30%;
+  box-shadow: calc(0 * var(--unit)) calc(25 * var(--unit))
+      calc(10 * var(--unit)) rgba(0, 0, 0, 0.45) inset,
+    calc(-15 * var(--unit)) calc(25 * var(--unit)) calc(20 * var(--unit))
+      rgba(0, 0, 0, 0.45);
+  -webkit-clip-path: polygon(
+    49% 0,
+    100% 0,
+    100% 160%,
+    90% 160%,
+    11% 150%,
+    17% 95%
+  );
+  clip-path: polygon(49% 0, 100% 0, 100% 160%, 90% 160%, 11% 150%, 17% 95%);
+}
+.egg__spec--left {
+  --flip: 0;
+  --rotate: -1;
+  left: 0;
+}
+.egg__spec--right {
+  --flip: 1;
+  --rotate: 1;
+  right: 0;
+}
+.egg__spec-bridge {
+  height: 64%;
+  width: 25%;
+  top: 1%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  border-radius: 50%/50%;
+  border: calc(55 * var(--unit)) solid var(--specs);
+  -webkit-clip-path: polygon(10% 0, 90% 0, 90% 50%, 10% 50%);
+  clip-path: polygon(10% 0, 90% 0, 90% 50%, 10% 50%);
+}
+.egg__specs-arm {
+  height: 14%;
+  width: 90%;
+  background: var(--specs);
+  left: 50%;
+  top: 35%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-clip-path: polygon(
+    -7% 0,
+    25% 55%,
+    75% 55%,
+    107% 0,
+    100% 79%,
+    76% 100%,
+    24% 100%,
+    0 79%
+  );
+  clip-path: polygon(
+    -7% 0,
+    25% 55%,
+    75% 55%,
+    107% 0,
+    100% 79%,
+    76% 100%,
+    24% 100%,
+    0 79%
+  );
+}
